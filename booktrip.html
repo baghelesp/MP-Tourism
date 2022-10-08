@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RCOEM</title>
+<style>
+body{
+    font-size: 20px;
+}
+
+div{
+    margin: auto;
+    padding: 4px;
+}
+.form{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color:rgb(7, 7, 7);
+}
+img{
+    height: 110px;
+    width: 100px;
+}
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+.form {
+    position: fixed;
+    left: 30%;
+    margin:10px;
+    padding: 10px; 
+    border: 1px solid black; 
+    width: 35%;
+    border-radius: 5px 5px; 
+    background-color: rgba(132, 208, 19, 0.157);
+}
+.input{
+    background-color: rgba(240, 248, 255, 0.288);
+    margin: 4px;
+    border-radius: 5px 5px;
+}
+
+</style>
+</head>
+<body>
+<video  autoplay >
+        <source src="bookTripVideo.mp4" type="video/mp4">
+</video>
+
+<div  class="form" >
+    <div style="text-align:center ; color:aliceblue">
+        <h2>BOOK MY TRIP</h2>
+    </div>
+<form >
+    <div class="input">First Name: <input type="text" name="Fname" maxlength="120"></div>
+    <div class="input">Last Name: <input type="text" name="Lname" maxlength="120"></div>
+    <div class="input">
+        Number Of Person: <input type="number">
+    </div>
+    <div class="input">
+    From Date: <input type="date" name="fromDate"> To Date :  <input type="date" name="toDate">
+    </div>
+    <div class="input">
+        Number of Days: <input type="number">
+    </div>
+    <div class="input">
+        Number of Nights: <input type="number">
+    </div>
+    <div class="input">
+        <label for="place">Choose a Place:</label>
+        <select name="place" id="place">
+        <option value="Kanha">Kanha</option>
+        <option value="bandhavgarh">Bhandhavgarh</option>
+        <option value="pachmari">Pachmari</option>
+        <option value="ujjain">Ujjain</option>
+</select>
+    </div>
+    <div class="input">
+        Mobile No. <input type="text" name="MoblieNo">
+    </div>
+
+     
+    <div class="input">Email: <input type="email" name="Email"></div>
+    <div class="input">Do you want to Submit? <input type="submit" name="Submit"></div>
+    <div><input type="reset"></div>
+
+
+</form>
+<div><a href="home.html" style="color:white ;">Go back</a></div>
+</div>
